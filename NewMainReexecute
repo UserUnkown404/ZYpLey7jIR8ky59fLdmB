@@ -12,7 +12,7 @@ coroutine.resume(coroutine.create(function()
             if v:IsA("TextLabel") and v.Text == "Credits: X" then
                 local ScreenUI = v.Parent.Parent
                 ButtonUI = v.Parent:FindFirstChildOfClass("TextButton")
-                ScreenUI.Enabled = false
+                ScreenUI.Enabled = true
                 ScreenUI.Parent = CoreGui
                 if ButtonUI ~= nil and ButtonUI.Text == "Off" then
                     print(ButtonUI.Text)
