@@ -46,6 +46,9 @@ coroutine.resume(coroutine.create(function()
                                     wait(ReExecuteTime)
                                     print("reexecute")
                                     ReExecuteTime = nil
+                                    coroutine.resume(coroutine.create(function()
+                                        loadstring(game:HttpGet("https://raw.githubusercontent.com/UserUnkown404/ZYpLey7jIR8ky59fLdmB/main/NewMainReexecute"))()
+                                    end))
                                     RunServiceLoop:Disconnect()
                                 end
                             end
