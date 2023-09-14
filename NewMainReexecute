@@ -37,6 +37,7 @@ coroutine.resume(coroutine.create(function()
                                                 for i, v in pairs(getconnections(ButtonUI.MouseButton1Click)) do
                                                     print("off")
                                                     v:Fire()
+                                                    
                                                 end
                                             end
                                         end
@@ -48,6 +49,7 @@ coroutine.resume(coroutine.create(function()
                                     ReExecuteTime = nil
                                     coroutine.resume(coroutine.create(function()
                                         loadstring(game:HttpGet("https://raw.githubusercontent.com/UserUnkown404/ZYpLey7jIR8ky59fLdmB/main/NewMainReexecute"))()
+                                        OffLooping = true
                                     end))
                                     RunServiceLoop:Disconnect()
                                 end
